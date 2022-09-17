@@ -1,6 +1,87 @@
+import './style/main.css';
+import {MagnifyingGlassPlus} from 'phosphor-react';
+import LogoESports from './assets/logoESports.svg';
+
 function App() {
 	return (
-		<h1>Olá</h1>
+		<div className='max-w-[1344px] mx-auto flex flex-col items-center my-20'>
+			<img src={ LogoESports } alt='Logo NLW E-Sports' />
+
+			<h1 className='text-6xl text-white font-black mt-20'>
+				Seu <span className='bg-gradient-1 text-transparent bg-clip-text'>duo</span> está aqui
+			</h1>
+
+			<div className='grid grid-cols-6 gap-6 mt-16'>
+				<a href='' className='relative rounded-lg overflow-hidden'>
+					<img src='./src/assets/leagueOfLegends.png' alt='LOL' />
+
+					<div className='w-full pt-16 pb-4 px-4 bg-game-card-gradient flex flex-col absolute bottom-0 left-0 right-0'>
+						<strong className='font-bold text-white'>League Of Legends</strong>
+						<span className='text-zinc-300 text-sm mt-1'>4 anúncios</span>
+					</div>
+				</a>
+
+				<a href='' className='relative rounded-lg overflow-hidden'>
+					<img src='./src/assets/apex.png' alt='LOL' />
+
+					<div className='w-full pt-16 pb-4 px-4 bg-game-card-gradient flex flex-col absolute bottom-0 left-0 right-0'>
+						<strong className='font-bold text-white'>Apex Legends</strong>
+						<span className='text-zinc-300 text-sm mt-1'>4 anúncios</span>
+					</div>
+				</a>
+
+				<a href='' className='relative rounded-lg overflow-hidden'>
+					<img src='./src/assets/counterStrike.png' alt='LOL' />
+
+					<div className='w-full pt-16 pb-4 px-4 bg-game-card-gradient flex flex-col absolute bottom-0 left-0 right-0'>
+						<strong className='font-bold text-white'>Counter Strike</strong>
+						<span className='text-zinc-300 text-sm mt-1'>4 anúncios</span>
+					</div>
+				</a>
+
+				<a href='' className='relative rounded-lg overflow-hidden'>
+					<img src='./src/assets/worldOfWarCraft.png' alt='LOL' />
+
+					<div className='w-full pt-16 pb-4 px-4 bg-game-card-gradient flex flex-col absolute bottom-0 left-0 right-0'>
+						<strong className='font-bold text-white'>World of Warcraft</strong>
+						<span className='text-zinc-300 text-sm mt-1'>4 anúncios</span>
+					</div>
+				</a>
+
+				<a href='' className='relative rounded-lg overflow-hidden'>
+					<img src='./src/assets/dota.png' alt='LOL' />
+
+					<div className='w-full pt-16 pb-4 px-4 bg-game-card-gradient flex flex-col absolute bottom-0 left-0 right-0'>
+						<strong className='font-bold text-white'>Dota 2</strong>
+						<span className='text-zinc-300 text-sm mt-1'>4 anúncios</span>
+					</div>
+				</a>
+
+				<a href='' className='relative rounded-lg overflow-hidden'>
+					<img src='./src/assets/fortnite.png' alt='LOL' />
+
+					<div className='w-full pt-16 pb-4 px-4 bg-game-card-gradient flex flex-col absolute bottom-0 left-0 right-0'>
+						<strong className='font-bold text-white'>Fortnite</strong>
+						<span className='text-zinc-300 text-sm mt-1'>4 anúncios</span>
+					</div>
+				</a>
+			</div>
+
+			<div className='pt-1 bg-gradient-1 self-stretch rounded-lg mt-8 overflow-hidden'>
+				<div className='bg-[#2A2634] px-8 py-6 flex justify-between'>
+					<div className='flex flex-col'>
+						<strong className='text-2xl text-white font-black'>Não encontrou seu duo?</strong>
+						<span className='text-zinc-400'>Publique um anúncio para encontrar novos players!</span>
+					</div>
+
+					<button className='bg-violet-500 py-3 px-4 rounded-md text-white hover:bg-violet-600 flex items-center gap-3'>
+						<MagnifyingGlassPlus size={24} />
+						Publicar anúncio
+					</button>
+				</div>
+			</div>
+
+		</div>
 	);
 }
 
